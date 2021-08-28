@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/AppLandingPage/static/css/main.58fde18e.chunk.css",
+    "main.js": "/AppLandingPage/static/js/main.d9acea00.chunk.js",
+    "main.js.map": "/AppLandingPage/static/js/main.d9acea00.chunk.js.map",
+    "runtime-main.js": "/AppLandingPage/static/js/runtime-main.675ff159.js",
+    "runtime-main.js.map": "/AppLandingPage/static/js/runtime-main.675ff159.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/AppLandingPage/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.d043710d.chunk.js": "/AppLandingPage/static/js/2.d043710d.chunk.js",
+    "static/js/2.d043710d.chunk.js.map": "/AppLandingPage/static/js/2.d043710d.chunk.js.map",
+    "index.html": "/AppLandingPage/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/AppLandingPage/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.58fde18e.chunk.css.map": "/AppLandingPage/static/css/main.58fde18e.chunk.css.map",
+    "static/js/2.d043710d.chunk.js.LICENSE.txt": "/AppLandingPage/static/js/2.d043710d.chunk.js.LICENSE.txt",
+    "static/media/anmedited.b5063ea7.gif": "/AppLandingPage/static/media/anmedited.b5063ea7.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.675ff159.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.d043710d.chunk.js",
+    "static/css/main.58fde18e.chunk.css",
+    "static/js/main.d9acea00.chunk.js"
+  ]
+}
