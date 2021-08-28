@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+nav{
+    background:white;
+    display:flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    top:0;
+    position: sticky;
+    z-index: 999;
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: calc(90vw - 80px);
+}
+
+.navmenu #home_anchor, #about_anchor, #contact_anchor, #features_anchor{
+    position: relative;
+    font-size: 20px;
+    color:rgb(0, 0, 121);
+    padding: 20px;
+    border-radius: 2rem;
+    border:none;
+    background-color: inherit;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+    z-index: 9;
+    width:200px;
+    height: 70px;
+}
+
+.home_grad, .features_grad, .about_grad, .contact_grad{
+    background: #EECDA3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgb(233,112,101) 20%, #EECDA3 60%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, rgb(233,112,101) 20%, #EECDA3 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    padding: 20px;
+    border-radius: 2rem;
+    border:none;
+    cursor:pointer;
+    transition:all 0.25s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navmenu #home_anchor:hover .home_grad, #about_anchor:hover .about_grad, #contact_anchor:hover .contact_grad, #features_anchor:hover .features_grad
+, #home_anchor:hover, #about_anchor:hover, #contact_anchor:hover, #features_anchor:hover{
+    /*background-image: #EECDA3;  /* fallback for old browsers */
+    /*background-image: -webkit-linear-gradient(45deg, #EF629F 20%, #EECDA3 60%);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background-image: linear-gradient(45deg, #EF629F 20%, #EECDA3 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*color:white;
+    /*transition:all 0.5s ease-in-out*/
+    opacity: 1;
+    color:white;
+    font-size: 25px;
+
+
+}
+
+@media screen and (max-width:960px){
+    .navmenu, .navmenu_inactive{
+        background: white;
+        position: absolute;
+        top: 80px;
+        height: 300px;
+        width: 100vw;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    .navmenu_inactive{
+        opacity: 0;
+    }
+}
+
+

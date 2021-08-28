@@ -1,0 +1,117 @@
+#home {
+    position: relative;
+    background: rgb(255, 13, 94);
+    background-image: url('https://wallpaperaccess.com/full/692121.jpg');
+    background-size: cover;
+    /* height: calc(100vh - 80px); */
+    height: max(50rem,100vh);
+    
+}
+.hero{
+    position: absolute;
+    color:wheat;
+    font-size: 4.5vw;
+    font-weight: bolder;
+    left:50%;
+    width: 90%;
+    top:20%;
+    height: 30%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.subhero{
+    position: absolute;
+    color:rgb(0, 0, 138);
+    font-weight: 700;
+    font-size: 2.5vw;
+    left:50%;
+    width:95%;
+    height: 30%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+.herospace{
+    height: 80px;
+}
+
+.installButtons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 400px;
+    
+    
+}
+.android, .ios{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid greenyellow;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+.installButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    height:11vh
+}
+.android{
+    border-bottom-left-radius: 12.5vw;
+    border-top-left-radius: 12.5vw;
+    background: rgb(151, 251, 0);
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.ios{
+    border-bottom-right-radius: 12.5vw;
+    border-top-right-radius: 12.5vw;
+    background: rgb(151, 251, 0);
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.android:hover, .ios:hover{
+    background: rgb(187, 238, 111);
+    transition: all 0.5s ease;
+
+}
+
+.downtext{
+    margin-left: 10px;
+    color: white;
+}
+
+
+@media screen and (max-width:1000px){
+    .hero{
+        top:20%;
+        font-size: 3rem;
+    }
+    .herospace{
+        height: 40px;
+    }
+    .subhero{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .hero{
+        top:20%;
+        font-size: 2.5rem;
+    }
+    .herospace{
+        height: 40px;
+    }
+    .subhero{
+        font-size: 1.5rem;
+    }
+}

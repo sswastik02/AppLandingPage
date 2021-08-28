@@ -1,0 +1,122 @@
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: wheat;
+  overflow: hidden;
+  height: 60rem;
+}
+
+
+.mobileHolder {
+  position: relative;
+  width: 33vw;
+}
+
+.animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 48rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .animation {
+    width: 18rem;
+    height: 42rem;
+  }
+}
+
+/* ---------------------Feature Card--------------------- */
+
+.featureCard {
+  position: relative;
+  left:100%;
+  transform: translate(-100%, -50%);
+  max-width: 80%;
+  height: fit-content;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(255, 13, 94);
+  overflow: hidden;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  text-overflow: ellipsis;
+}
+#featureCard3, #featureCard4{
+  left: 0;
+  transform: translateX(-10%);
+}
+
+#featureCard1{
+  top: 30%;
+}
+#featureCard2{
+  top: 10%;
+}
+#featureCard3{
+  top: 50%;
+}
+#featureCard4{
+  top: 30%;
+}
+
+.featureTitle {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 5px dashed white;
+}
+
+.featureBody {
+  padding-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  scroll-behavior: smooth;
+}
+
+.featureCards {
+  position: relative;
+  top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width:950px){
+  #features{
+    grid-template-columns: 1fr;
+  }
+  .featureCard{
+    max-width: 30rem;
+  }
+  #featureCard2, #featureCard4{
+    top: 5%;
+    left: 90%;
+    transform: translateX(-95%);
+  }
+  #featureCard1, #featureCard3{
+    top: 5%;
+    left: 0%;
+    transform: translateX(-0%);
+  }
+  #featureCard1{
+    top:15%
+  }
+  
+}
+
+@media screen and (max-width:610px){
+  .featureCard{
+    max-width: 20rem;
+  }
+  .featureTitle{
+    font-size: 1.3rem;
+  }
+  .featureBody{
+    font-size: 1rem;
+  }
+}
